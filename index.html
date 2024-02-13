@@ -65,22 +65,23 @@
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area (A) = w X l </p>
 
+                      <!-- input field -->
                       <div class="flex w-5/6 justify-between items-center">
-                        <input class="bg-[#F1F1F1] w-1/3" type="text">
+                        <input id="rectangle-w" class="bg-[#F1F1F1] w-1/3" type="text" placeholder="w">
                         <span>cm</span>
-                        <input class="bg-[#F1F1F1] w-1/3" type="">
+                        <input id="rectangle-l" class="bg-[#F1F1F1] w-1/3" type="" placeholder="l">
                         <span>cm</span>
                       </div>
 
                       <div class="">
                         <p>
-                            Area = <span id=""> 0 </span> <span>Cm <sup>2</sup></span>
+                            Area = <span id="rectangle-area"> 0 </span> <span>Cm <sup>2</sup></span>
                         </p>
                       </div>
 
 
                       <div class="card-actions w-full">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateRectangle()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>

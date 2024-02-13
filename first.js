@@ -10,6 +10,15 @@ function calculateTriangle(){
 
 }
 
+function calculateRectangle(){
+    const width = findValueById('rectangle-w');
+    const length = findValueById('rectangle-l');
+
+    const area = width * length ;
+
+    setArea('rectangle-area', area);
+}
+
 function findValueById(element){
     const inputField = document.getElementById(element);
     const inputValue = inputField.value;
