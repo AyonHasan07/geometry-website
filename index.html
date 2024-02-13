@@ -155,22 +155,23 @@
                       <h2 class="card-title">Pentagon</h2>
                       <p>Area (A) = 0.5 X p X b </p>
 
-                      <div class="flex w-5/6 justify-between items-center">
-                        <input class="bg-[#F1F1F1] w-1/3" type="text">
+                      <!-- input field -->
+                      <div class="flex w-5/6 justify-between items-center" >
+                        <input id="pentagon-p" class="bg-[#F1F1F1] w-1/3" type="text" placeholder="p">
                         <span>cm</span>
-                        <input class="bg-[#F1F1F1] w-1/3" type="">
+                        <input id="pentagon-a" class="bg-[#F1F1F1] w-1/3" type="" placeholder="a">
                         <span>cm</span>
                       </div>
 
                       <div class="">
                         <p>
-                            Area = <span id=""> 0 </span> <span>Cm <sup>2</sup></span>
+                            Area = <span id="pentagon-area"> 0 </span> <span>Cm <sup>2</sup></span>
                         </p>
                       </div>
 
 
                       <div class="card-actions w-full">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculatePentagon()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -184,22 +185,23 @@
                       <h2 class="card-title">Ellipse</h2>
                       <p>Area (A) = π  X a X b </p>
 
+                      <!-- input field -->
                       <div class="flex w-5/6 justify-between items-center">
-                        <input class="bg-[#F1F1F1] w-1/3" type="text">
+                        <input id="ellipse-a" class="bg-[#F1F1F1] w-1/3" type="text" placeholder="a">
                         <span>cm</span>
-                        <input class="bg-[#F1F1F1] w-1/3" type="">
+                        <input id="ellipse-b" class="bg-[#F1F1F1] w-1/3" type="" placeholder="b">
                         <span>cm</span>
                       </div>
 
                       <div class="">
                         <p>
-                            Area = <span id=""> 0 </span> <span>Cm <sup>2</sup></span>
+                            Area = <span id="ellipse-area"> 0 </span> <span>Cm <sup>2</sup></span>
                         </p>
                       </div>
 
 
                       <div class="card-actions w-full">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateEllipse()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>

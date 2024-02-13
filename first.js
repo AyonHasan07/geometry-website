@@ -37,6 +37,24 @@ function calculateRhombus(){
     setArea('rhombus-area', area);
 }
 
+function calculatePentagon(){
+    const p = findValueById('pentagon-p');
+    const a = findValueById('pentagon-a');
+
+    const area =  0.5 * p * a;
+
+    setArea('pentagon-area', area);
+}
+
+function calculateEllipse(){
+    const pai = 3.14;
+    const a = findValueById('ellipse-a');
+    const b = findValueById('ellipse-b');
+
+    const area = pai * a * b;
+    setArea('ellipse-area', area);
+}
+
 function findValueById(element){
     const inputField = document.getElementById(element);
     const inputValue = inputField.value;
